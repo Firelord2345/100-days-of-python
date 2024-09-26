@@ -24,6 +24,6 @@ student_scores = {
 # student_scores['Harry']=81
 # print(student_scores)
 # we add the string
-student_scores['BOB']=81
-print(student_scores)
+# student_scores['BOB']=81
+# print(student_scores)
 
