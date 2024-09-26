@@ -3,7 +3,7 @@ import random
 import hangmanwords
 from hangmanarts import logo,stages
 lives=7
-
+print(logo)
 # Randomly choose a word from a list
 chossen_word=random.choice(hangmanwords.word_list)
 
@@ -13,7 +13,7 @@ for j in range(len(chossen_word)):
     replace += '_'
 print(replace)
 incorrect_guesses = 0
-max_incorrect_guesses = len(chossen_word)
+# max_incorrect_guesses = len(chossen_word)
 while  lives>0:
      guess=input("\nGuess the letter ").lower()
 

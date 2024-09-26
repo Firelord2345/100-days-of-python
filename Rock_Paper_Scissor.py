@@ -49,7 +49,7 @@ else:
 
 if(input==computer_input):
     print("Tie")
-elif(input==1 and computer_input==2)or(input==2 and computer_input==0) or(input==0and computer_input==1):
+elif(input==1 and computer_input==2)or(input==2 and computer_input==0) or(input==0 and computer_input==1):
     print("You Lose")
 else:
     print("You Win")
