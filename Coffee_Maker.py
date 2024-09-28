@@ -33,14 +33,14 @@ def report_coffee(report,choice):
         return "Report not requested"
 def resource_suffecient(x):
         for i in x:
-            if x[i]<resources[i]:
-                return True
-        return False   
+            if x[i]>resources[i]:
+                return False
+        return True   
 def coffee(choice) :
     for item in choice:
        resources[item] -= choice[item]
-       return resources
-      
+       
+    return resources  
     
 is_on=True
 while is_on==True:
@@ -53,6 +53,8 @@ while is_on==True:
           print(f"Thanks for the order {choice} ")
           x=coffee(drink["ingredients"])
           print(f"{resources}")
+      else:
+           print(f"Unable to make {choice} due to insufficient resources.")
           
       on=input("Do you want to turn on or off? ")
       if on=="off":
